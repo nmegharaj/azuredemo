@@ -8,9 +8,20 @@
     	<servlet-name>MyMavenServlet</servlet-name>
     	<servlet-class>com.test.MyMavenServlet</servlet-class>
     </servlet>
+    <servlet>
+    	<description>
+    	</description>
+    	<display-name>MyJenkinsServlet</display-name>
+    	<servlet-name>MyJenkinsServlet</servlet-name>
+    	<servlet-class>com.test.MyJenkinsServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
     	<servlet-name>MyMavenServlet</servlet-name>
     	<url-pattern>/MyMavenServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>MyJenkinsServlet</servlet-name>
+    	<url-pattern>/MyJenkinsServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
